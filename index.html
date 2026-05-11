@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Renato de Carvalho | Tech & Marketing Specialist</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #2563eb;
+            --dark: #0f172a;
+            --light: #f8fafc;
+            --accent: #3b82f6;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f1f5f9;
+            color: var(--dark);
+            line-height: 1.6;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, var(--dark) 0%, #1e293b 100%);
+            color: white;
+            padding: 80px 0;
+            border-bottom: 4px solid var(--primary);
+        }
+
+        .video-container {
+            position: relative;
+            width: 100%;
+            padding-bottom: 56.25%;
+            height: 0;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+            border: 2px solid rgba(255, 255, 255, 0.1);
+            background: #000;
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .section-nav {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid #e2e8f0;
+        }
+
+        .card {
+            border: none;
+            border-radius: 16px;
+            background: #ffffff;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+            margin-bottom: 24px;
+            transition: all 0.3s ease;
+        }
+
+        .skill-tag {
+            background: #eff6ff;
+            color: var(--primary);
+            padding: 6px 14px;
+            border-radius: 8px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            display: inline-block;
+            margin: 4px;
+        }
+
+        .experience-border {
+            border-left: 3px solid #e2e8f0;
+            padding-left: 25px;
+            position: relative;
+        }
+
+        .experience-border::before {
+            content: "";
+            position: absolute;
+            left: -9px;
+            top: 0;
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            background: var(--primary);
+        }
+
+        .contact-icon {
+            width: 36px;
+            height: 36px;
+            background: rgba(255, 255, 255, 0.1);
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            margin-right: 8px;
+            transition: 0.3s;
+        }
+
+        .contact-link:hover .contact-icon {
+            background: var(--primary);
+            color: white;
+        }
+
+        h2 {
+            font-weight: 700;
+            color: var(--dark);
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="hero">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-7">
+                    <span class="badge bg-primary mb-3">Disponível para projetos, freelancers, parcerias e
+                        contratações</span>
+                    <h1 class="display-3 fw-bold mb-2 text-white">RENATO DE CARVALHO</h1>
+                    <p class="lead opacity-75 mb-4">Especialista em IA aplicada a negócios, Analista de automação,
+                        Marketing Digital, Marketplace, Desenvolvedor Full Stack, Designer
+                        Gráfico, Publicidade e propaganda, Videomaker e Web Developer</p>
+                    <div class="d-flex flex-wrap gap-4 align-items-center mt-4">
+                        <a href="mailto:zorrilharenato@gmail.com"
+                            class="text-white text-decoration-none d-flex align-items-center contact-link">
+                            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                            <span>zorrilharenato@gmail.com</span>
+                        </a>
+                        <a href="https://behance.net/renatodecarvallho" target="_blank"
+                            class="text-white text-decoration-none d-flex align-items-center contact-link">
+                            <div class="contact-icon"><i class="fab fa-behance"></i></div> <span>Behance</span>
+                        </a>
+
+                        <a href="https://wa.me/5515996136898" target="_blank"
+                            class="text-white text-decoration-none d-flex align-items-center contact-link">
+                            <div class="contact-icon text-success"><i class="fab fa-whatsapp"></i></div> <span>(15)
+                                99613-6898</span>
+                        </a>
+
+                        <a href="https://www.linkedin.com/in/renatodecarvallho/" target="_blank"
+                            class="text-white text-decoration-none d-flex align-items-center contact-link">
+                            <div class="contact-icon text-success"><i class="fab fa-linkedin"></i></div>
+                            <span>renatodecarvallho</span>
+                        </a>
+
+                    </div>
+                </div>
+                <!--
+
+                <div class="col-lg-5 mt-5 mt-lg-0">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/NbrlNSoSC78?si=gCiM7jS6-Dppp5yT"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+-->
+
+
+            </div>
+        </div>
+    </header>
+
+    <main class="container my-5">
+        <div class="row">
+            <aside class="col-lg-4 mb-4" id="tecnologias">
+
+                <!-- Hard Skills -->
+                <div class="card p-4">
+                    <h4 class="mb-4 fw-bold"><i class="fas fa-layer-group text-primary me-2"></i>Hard Skills</h4>
+
+                    <div class="mb-4">
+                        <p class="small text-muted text-uppercase fw-bold mb-2">Desenvolvimento & Tecnologia</p>
+                        <span class="skill-tag">PHP 8</span>
+                        <span class="skill-tag">MySQL</span>
+                        <span class="skill-tag">Laravel</span>
+                        <span class="skill-tag">PWA (Progressive Web Apps)</span>
+                        <span class="skill-tag">HTML</span>
+                        <span class="skill-tag">CSS</span>
+                        <span class="skill-tag">Javascript</span>
+                        <span class="skill-tag">Bootstrap</span>
+                        <span class="skill-tag">Composer</span>
+                        <span class="skill-tag">VSCode</span>
+                        <span class="skill-tag">Desenvolvimento Web</span>
+                        <span class="skill-tag">Desenvolvimento de sistemas</span>
+                        <span class="skill-tag">Desenvolvimento de plataformas NPS</span>
+                        <span class="skill-tag">Google Apps Script</span>
+                        <span class="skill-tag">VBA Avançado</span>
+                        <span class="skill-tag">Power BI</span>
+                        <span class="skill-tag">Excel Avançado</span>
+                        <span class="skill-tag">Google Sheets Avançado</span>
+                        <span class="skill-tag">Macros VBA</span>
+                        <span class="skill-tag">Automação de processos</span>
+                        <span class="skill-tag">Robôs de automação</span>
+                        <span class="skill-tag">APIs WhatsApp</span>
+                        <span class="skill-tag">CRM Kommo</span>
+                        <span class="skill-tag">Gestão Google Workspace</span>
+                        <span class="skill-tag">Gestão de usuários</span>
+                        <span class="skill-tag">Segurança da informação</span>
+                        <span class="skill-tag">Infraestrutura de automação Alexa</span>
+                        <span class="skill-tag">Suporte técnico N1</span>
+                        <span class="skill-tag">Gestão de arquivos Google Drive</span>
+                    </div>
+
+
+
+                    <div class="mb-4">
+                        <p class="small text-muted text-uppercase fw-bold mb-2">Inteligência Artificial & Automação</p>
+                        <span class="skill-tag">ChatGPT</span>
+                        <span class="skill-tag">Gemini</span>
+                        <span class="skill-tag">Copilot</span>
+                        <span class="skill-tag">Apollo</span>
+                        <span class="skill-tag">Abacus</span>
+                        <span class="skill-tag">Grok</span>
+                        <span class="skill-tag">Deepseek</span>
+                        <span class="skill-tag">Manus</span>
+                        <span class="skill-tag">Perso AI</span>
+                        <span class="skill-tag">CREAO AI</span>
+                        <span class="skill-tag">xAI</span>
+                        <span class="skill-tag">Google Antigravity</span>
+                        <span class="skill-tag">IA Generativa</span>
+                        <span class="skill-tag">Automação com IA</span>
+                        <span class="skill-tag">Bots inteligentes</span>
+                        <span class="skill-tag">Criação de campanhas com IA</span>
+                        <span class="skill-tag">Storytelling com dados</span>
+                        <span class="skill-tag">Tratamento de imagens com IA</span>
+                        <span class="skill-tag">Criação de vídeos com IA</span>
+                        <span class="skill-tag">Automação de Leads</span>
+                    </div>
+
+
+                    <div class="mb-4">
+                        <p class="small text-muted text-uppercase fw-bold mb-2">Marketing Digital & Performance</p>
+                        <span class="skill-tag">SEO</span>
+                        <span class="skill-tag">Google Ads</span>
+                        <span class="skill-tag">Meta Ads</span>
+                        <span class="skill-tag">Facebook Ads</span>
+                        <span class="skill-tag">LinkedIn Ads</span>
+                        <span class="skill-tag">Gestão de tráfego pago</span>
+                        <span class="skill-tag">Marketing Digital</span>
+                        <span class="skill-tag">Gestão de Leads</span>
+                        <span class="skill-tag">Métricas de conversão</span>
+                        <span class="skill-tag">ROI</span>
+                        <span class="skill-tag">CAC</span>
+                        <span class="skill-tag">Gestão de audiência</span>
+                        <span class="skill-tag">Growth Marketing</span>
+                        <span class="skill-tag">Funil de vendas</span>
+                        <span class="skill-tag">RD Station</span>
+                        <span class="skill-tag">Analytics</span>
+                        <span class="skill-tag">Estratégia digital</span>
+                    </div>
+
+
+
+                    <div class="mb-4">
+                        <p class="small text-muted text-uppercase fw-bold mb-2">Marketplace & E-commerce</p>
+                        <span class="skill-tag">Mercado Livre</span>
+                        <span class="skill-tag">Shopee</span>
+                        <span class="skill-tag">Amazon</span>
+                        <span class="skill-tag">Magazine Luiza Marketplace</span>
+                        <span class="skill-tag">Americanas Marketplace</span>
+                        <span class="skill-tag">ERP Bling</span>
+                        <span class="skill-tag">ERP Tiny</span>
+                        <span class="skill-tag">Gestão de marketplace</span>
+                        <span class="skill-tag">Gestão de catálogo</span>
+                        <span class="skill-tag">WooCommerce</span>
+                        <span class="skill-tag">Gestão de Ecommerce</span>
+                        <span class="skill-tag">Gestão de estoque</span>
+                        <span class="skill-tag">Nota fiscal</span>
+                        <span class="skill-tag">Integração ERP</span>
+                        <span class="skill-tag">Gestão de produtos digitais</span>
+                    </div>
+
+
+
+                    <div class="mb-4">
+                        <p class="small text-muted text-uppercase fw-bold mb-2">Design & Audiovisual</p>
+                        <span class="skill-tag">Canva</span>
+                        <span class="skill-tag">Photoshop</span>
+                        <span class="skill-tag">Corel Draw</span>
+                        <span class="skill-tag">Illustrator</span>
+                        <span class="skill-tag">InDesign</span>
+                        <span class="skill-tag">Premiere</span>
+                        <span class="skill-tag">CapCut</span>
+                        <span class="skill-tag">After Effects</span>
+                        <span class="skill-tag">Design gráfico</span>
+                        <span class="skill-tag">Videomaker</span>
+                        <span class="skill-tag">Edição de vídeo</span>
+                        <span class="skill-tag">Motion Design</span>
+                        <span class="skill-tag">Criação de campanhas visuais</span>
+                        <span class="skill-tag">UGC (User Generated Content)</span>
+                        <span class="skill-tag">Fotografia promocional</span>
+                        <span class="skill-tag">Produção audiovisual</span>
+                        <span class="skill-tag">Redes sociais</span>
+                        <span class="skill-tag">Criação de posts</span>
+                    </div>
+
+
+                    <div class="mb-0">
+                        <p class="small text-muted text-uppercase fw-bold mb-2">Eventos & Coordenação</p>
+                        <span class="skill-tag">Coordenação de eventos</span>
+                        <span class="skill-tag">Organização de eventos</span>
+                        <span class="skill-tag">Mídia interativa</span>
+                        <span class="skill-tag">Piso interativo</span>
+                        <span class="skill-tag">Coordenação de equipes</span>
+                        <span class="skill-tag">Gestão operacional</span>
+                        <span class="skill-tag">Relações públicas</span>
+                        <span class="skill-tag">Networking profissional</span>
+                        <span class="skill-tag">Gestão de fornecedores</span>
+                        <span class="skill-tag">Gestão de montagem técnica</span>
+                        <span class="skill-tag">Produção de eventos corporativos</span>
+                    </div>
+                </div>
+                <!-- Hard Skills -->
+
+
+
+                <!-- Soft Skills -->
+                <div class="card p-4">
+                    <h4 class="mb-4 fw-bold"><i class="fas fa-layer-group text-primary me-2"></i>Soft Skills</h4>
+
+                    <div class="mb-4">
+                        <p class="small text-muted text-uppercase fw-bold mb-2">Organização & Produtividade</p>
+                        <span class="skill-tag">Gestão do tempo</span>
+                        <span class="skill-tag">Cumprimento de prazos</span>
+                        <span class="skill-tag">Organização</span>
+                        <span class="skill-tag">Planejamento</span>
+                        <span class="skill-tag">Multitarefas</span>
+                        <span class="skill-tag">Adaptabilidade</span>
+                    </div>
+
+                    <div class="mb-4">
+                        <p class="small text-muted text-uppercase fw-bold mb-2">Liderança & Gestão</p>
+                        <span class="skill-tag">Liderança de equipes</span>
+                        <span class="skill-tag">Coordenação de times</span>
+                        <span class="skill-tag">Gestão de pessoas</span>
+                        <span class="skill-tag">Gestão de processos</span>
+                        <span class="skill-tag">Gestão operacional</span>
+                        <span class="skill-tag">Capacidade de delegação</span>
+                        <span class="skill-tag">Tomada de decisão</span>
+                    </div>
+
+                    <div class="mb-0">
+                        <p class="small text-muted text-uppercase fw-bold mb-2">Comunicação & Relacionamento</p>
+                        <span class="skill-tag">Comunicação interpessoal</span>
+                        <span class="skill-tag">Atendimento ao cliente</span>
+                        <span class="skill-tag">Relações públicas</span>
+                        <span class="skill-tag">Networking</span>
+                        <span class="skill-tag">Negociação com fornecedores</span>
+                        <span class="skill-tag">Relacionamento corporativo</span>
+                        <span class="skill-tag">Comunicação estratégica</span>
+                    </div><br>
+
+                    <div class="mb-0">
+                        <p class="small text-muted text-uppercase fw-bold mb-2">Adaptabilidade</p>
+                        <span class="skill-tag">Perfil Analítico</span>
+                        <span class="skill-tag">Análise de dados</span>
+                        <span class="skill-tag">Pensamento estratégico</span>
+                        <span class="skill-tag">Resolução de problemas</span>
+                        <span class="skill-tag">Raciocínio lógico</span>
+                        <span class="skill-tag">Interpretação de métricas</span>
+                        <span class="skill-tag">Visão analítica</span>
+                    </div><br>
+
+                    <div class="mb-0">
+                        <p class="small text-muted text-uppercase fw-bold mb-2">Criatividade & Inovação</p>
+                        <span class="skill-tag">Criatividade</span>
+                        <span class="skill-tag">Inovação</span>
+                        <span class="skill-tag">Pensamento digital</span>
+                        <span class="skill-tag">Capacidade de aprendizado autodidata</span>
+                        <span class="skill-tag">Atualização tecnológica constante</span>
+                        <span class="skill-tag">Visão empreendedora</span>
+                    </div><br>
+
+                    <div class="mb-0">
+                        <p class="small text-muted text-uppercase fw-bold mb-2">Perfil Profissional</p>
+                        <span class="skill-tag">Proatividade</span>
+                        <span class="skill-tag">Responsabilidade</span>
+                        <span class="skill-tag">Flexibilidade</span>
+                        <span class="skill-tag">Autonomia</span>
+                        <span class="skill-tag">Foco em resultados</span>
+                        <span class="skill-tag">Capacidade de aprendizado rápido</span>
+                    </div>
+
+                </div>
+                <!-- Soft Skills -->
+
+            </aside>
+
+
+            <section class="col-lg-8" id="experiencia">
+
+
+                <!-- Competências Chave -->
+                <h4 class="mb-4 fw-bold"><i class=" fa fa-key text-primary me-2"></i>Competências Chave
+                </h4>
+
+
+                <div class="card p-4" id="formacao">
+
+                    <!-- Desenvolvimento & Dados -->
+                    <div class="mb-3">
+                        <h6 class="fw-bold mb-1">Desenvolvimento & Dados:</h6>
+                        <span class="skill-tag">PHP 8</span>
+                        <span class="skill-tag">MySQL</span>
+                        <span class="skill-tag">Laravel</span>
+                        <span class="skill-tag">PWA</span>
+                        <span class="skill-tag">VBA Avançado</span>
+                        <span class="skill-tag">Power BI</span>
+                        <span class="skill-tag">Jira</span>
+                        <span class="skill-tag">ZenDesk</span>
+                    </div>
+                    <!-- Desenvolvimento & Dados -->
+
+
+                    <!-- E-commerce & Marketplace -->
+                    <div class="mb-3">
+                        <h6 class="fw-bold mb-1">E-commerce & Marketplace:</h6>
+                        <span class="skill-tag">Mercado Livre</span>
+                        <span class="skill-tag">Americanas</span>
+                        <span class="skill-tag">Shopee</span>
+                        <span class="skill-tag">Integração ERP</span>
+                        <span class="skill-tag">Bling</span>
+                        <span class="skill-tag">Tiny</span>
+                    </div>
+                    <!-- E-commerce & Marketplace -->
+
+
+                    <!-- Marketing & Automação -->
+                    <div class="mb-3">
+                        <h6 class="fw-bold mb-1">Marketing & Automação:</h6>
+                        <span class="skill-tag">CRM Kommo (Partner)</span>
+                        <span class="skill-tag">Automação de Leads (Bots/IA)</span>
+                        <span class="skill-tag">SEO</span>
+                        <span class="skill-tag">Google Ads</span>
+                        <span class="skill-tag">Meta ADS</span>
+                    </div>
+                    <!-- Marketing & Automação -->
+
+
+                    <!-- Inovação -->
+                    <div class="mb-3">
+                        <h6 class="fw-bold mb-1">Inovação:</h6>
+                        <span class="skill-tag">Implementação de IA Generativa</span>
+                        <span class="skill-tag">Gemini</span>
+                        <span class="skill-tag">Copilot</span>
+                        <span class="skill-tag">ChatGPT</span>
+                        <span class="skill-tag">Apollo</span>
+                        <span class="skill-tag">Abacus</span>
+                        <span class="skill-tag">Grok</span>
+                        <span class="skill-tag">Claude</span>
+                        <span class="skill-tag">Deepseek</span>
+                        <span class="skill-tag">Perplexity</span>
+                        <span class="skill-tag">Antigravity</span>
+                        <span class="skill-tag">Lovable</span>
+                        <span class="skill-tag">xAI</span>
+                        <span class="skill-tag">Manus</span>
+                        <span class="skill-tag">CREAO AI</span>
+                        <span class="skill-tag">Perso AI</span>
+                        <span class="skill-tag">Criação de campanhas com IA</span>
+                        <span class="skill-tag">Designer de produtos com IA</span>
+                        <span class="skill-tag">Vídeos institucionais com IA</span>
+                        <span class="skill-tag">Vídeos de produtos com IA</span>
+                    </div>
+                    <!-- Inovação -->
+
+                </div>
+                <!-- Competências Chave -->
+
+                <br><br>
+                <h4 class="mb-4 fw-bold"><i class="fa fa-user text-primary me-2"></i>Trajetória profissional</h4>
+
+
+                <!-- Analista de Marketplace -->
+                <div class="card p-4">
+                    <div class="experience-border">
+                        <div class="d-flex justify-content-between align-items-start flex-wrap mb-2">
+                            <h4 class="fw-bold m-0">Analista de Marketplace</h4>
+                            <span class="text-primary fw-bold">2025 — 2026</span>
+                        </div>
+                        <p class="text-muted fw-bold mb-3">Bazzo Máquinas</p>
+                        <ul class="text-muted small">
+                            <li>Gestão de produtos para marketplace Mercado Livre, Shopee, Amazon e MagaLu, integrados
+                                ao CRM Tiny.</li>
+                            <li>Inteligência artificial para tratamento de imagens em lote, criação de campanhas de
+                                marketing, análise de dados, geração de dashboards, insights e storytelling com dados.
+                            </li>
+                            <li>Excel com PowerBI e Google planilhas avançadas, com tabelas dinâmicas, análises de
+                                dados, macros em VBA e Javascript.
+                            </li>
+                            <li>Campanhas em plataformas de anúncios (Meta Ads, Google Ads, etc.) para geração de leads
+                                e integração com CRM Kommo.
+                            </li>
+                            <li>Aplicação de métricas quantitativas (ROI, CAC, conversão) para medir a eficiência e
+                                produtividade das conversões de leads em vendas nas plataformas de marketplace e
+                                Ecommerce.
+                            </li>
+                            <li>Fotografia e vídeos promocionais de produtos e uso de inteligência artificial para
+                                aprimoramentos em eficiência.
+                            </li>
+                            <li>Materiais para e-commerce, anúncios digitais e redes sociais</li>
+
+
+
+                        </ul>
+                    </div>
+                </div>
+                <!-- Analista de Marketplace -->
+
+
+
+
+                <div class="card p-4">
+                    <div class="experience-border">
+                        <div class="d-flex justify-content-between align-items-start flex-wrap mb-2">
+                            <h4 class="fw-bold m-0">Coordenador de Tecnologia</h4>
+                            <span class="text-primary fw-bold">2022 — 2026</span>
+                        </div>
+                        <p class="text-muted fw-bold mb-3">Instituto Medicina em Foco</p>
+                        <ul class="text-muted small">
+                            <li>Gestão de contas em Google Workspace, e-mails, usuários etc.</li>
+                            <li>Criação de planilhas e macros em Google Sheets e Microsoft Excel.</li>
+                            <li>Segurança da informação na gestão de arquivos em Google Drive.</li>
+                            <li>Suporte N1 a colaboradores, médicos, diretoria e terceiros.</li>
+                            <li>Implantação, gestão de usuários e desenvolvimento de fluxos de Robôs e gestão de CRM
+                                Kommo.</li>
+                            <li>Infraestrutura e gestão de automação Alexa. (Echos, cortinas, iluminação etc.)</li>
+                            <li>Uso de inteligência Artificial para codificação de softwares (ChatGPT, Copilot)
+                            </li>
+                            <li>Criação de campanhas em mídia digital com uso de Google Ads, Meta Ads, Google Analytics,
+                                SEO</li>
+                            <li>Uso de Excel avançado, VBA e Power BI para análise de dados.</li>
+                            <li>Uso de PHP, MySQL, HTML, CSS, Javascript, Bootstrap, Composer, frameworks, VSCode para
+                                desenvolvimento de sistemas e plataformas de pesquisas NPS.</li>
+                            <li>Gestão do tempo e capacidade de cumprir prazos.</li>
+                        </ul>
+                    </div>
+                </div>
+
+
+
+                <div class="card p-4">
+                    <div class="experience-border">
+                        <div class="d-flex justify-content-between align-items-start flex-wrap mb-2">
+                            <h4 class="fw-bold m-0">Analista de Marketing</h4>
+                            <span class="text-primary fw-bold">2020 — 2022</span>
+                        </div>
+                        <p class="text-muted fw-bold mb-3">Gráfica Qualidade Total</p>
+                        <ul class="text-muted small">
+                            <li>Gestão de tráfego pago para Facebook ADS, Google ADS e LinkedIn ADS para criação de
+                                campanhas.</li>
+                            <li>Gestão de integração do sistema ERP Bling com Marketplace Mercado Livre, Shopee, Amazon
+                                e Americanas</li>
+                            <li>Criação e gestão de campanhas nas redes sociais com RD Station para Facebook, Instagram,
+                                YouTube, TikTok e LinkEdin.</li>
+                            <li>Gestão de catálogo de produtos no Facebook, WhatsApp e Loja online própria.</li>
+                            <li>Desenvolvimento de novos produtos e soluções gráficas, com Canva, Photoshop, Corel Draw,
+                                Illustrator, Indesign.</li>
+                            <li>Domínio em Premiere, Capcut e AfterEffects para vídeos e animações promocionais.</li>
+                            <li>Uso de técnicas UGC para criação de vídeos de produtos e conversões para Instagram e
+                                TikTok.</li>
+                            <li>Uso de inteligência artificial ChatGPT para criação de campanhas de marketing, posts e
+                                vídeos.</li>
+                            <li>Métricas e indicadores para gestão de leads, audiências e conversões.</li>
+                            <li>Uso de Excel e Google planilhas avançadas, com tabelas dinâmicas, análises de dados,
+                                macros em VBA e Javascript.</li>
+                            <li>Criação e Gestão de Ecommerce Woocommerce para produtos, pedidos, estoque, nota fiscal
+                                etc.</li>
+
+
+                        </ul>
+                    </div>
+                </div>
+
+
+
+
+                <div class="card p-4">
+                    <div class="experience-border">
+                        <div class="d-flex justify-content-between align-items-start flex-wrap mb-2">
+                            <h4 class="fw-bold m-0">Coordenador de Eventos Corporativos</h4>
+                            <span class="text-primary fw-bold">2016 — 2021</span>
+                        </div>
+                        <p class="text-muted fw-bold mb-3">Trinanda Media</p>
+                        <ul class="text-muted small">
+                            <li>Organização de eventos com mídia interativa (piso interativo).</li>
+                            <li>Suporte a equipe de marketing para geração de conteúdos interativos.</li>
+                            <li>Visitas técnicas e verificação de montagem e desmontagem de equipamentos.</li>
+                            <li>Acompanhamento do transcorrer do evento, realizando networking com clientes em
+                                potencial.</li>
+                            <li>Relações públicas durante eventos e feiras no suporte ao cliente.</li>
+                            <li>Contato direto com clientes e fornecedores nas tratativas relacionadas a organização do
+                                evento.</li>
+                            <li>Coordenação de equipe de mais de 30 profissionais indiretos.</li>
+                            <li>Contatos com clientes como Rede Globo, Kingston, Microsoft, 3M, Samsung, Band, Sesc,
+                                Senai entre outros.</li>
+                            <li>Organização de eventos como Apas, Campus Party, Brasil Promotion, Febraban entre
+                                outros..</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card p-4">
+                    <div class="experience-border">
+                        <div class="d-flex justify-content-between align-items-start flex-wrap mb-2">
+                            <h4 class="fw-bold m-0">Analista de Marketing</h4>
+                            <span class="text-primary fw-bold">2010 — 2015</span>
+                        </div>
+                        <p class="text-muted fw-bold mb-3">GS Motos & Capacetes</p>
+                        <ul class="text-muted small">
+                            <li>Criação de loja virtual completa em Woocommerce.</li>
+                            <li>Gestão de conteúdo.</li>
+                            <li>Análise de dados e métricas de vendas via Google Analytics e ferramentas do Woocommerce.
+                            </li>
+                            <li>Processos de venda e expedição via Correios.</li>
+                            <li>Validação de pagamentos junto ao PagSeguro.</li>
+                            <li>Organização e gestão de estoque.</li>
+                            <li>Execução de pós venda para aferir satisfação do cliente.
+                            <li>
+                            <li>Análise de feedback dos clientes.</li>
+                            <li>Tratamento de imagens com Photoshop para adequação dos produtos à plataforma.</li>
+                            <li>Desenvolvimento peças publicitárias, arte final, mídias digitais Facebook, Blogger,
+                                Twitter
+                                etc.</li>
+                        </ul>
+                    </div>
+                </div>
+
+
+
+                <br><br>
+                <!-- Projetos -->
+                <h4 class="mb-4 fw-bold"><i class=" fa fa-key text-primary me-2"></i>Projetos</h4>
+                <div class="card p-4" id="formacao">
+
+                    <div class="mb-3">
+                        <h6 class="fw-bold mb-1">Hamys Shop - Produtos Esotéricos (2025): <span class="skill-tag"><a
+                                    href="https://shopee.com.br/hamysshop" target="_blank">CONHEÇA</a></span></h6>
+
+                        <h6 class="fw-bold mb-1">Abako Gestão - Fluxo de Caixa (2026): <span class="skill-tag"><a
+                                    href="https://zorrilharenato.github.io/Abako-Gestor-Financeiro/"
+                                    target="_blank">ACESSE GRÁTIS</a></span></h6>
+
+                        <h6 class="fw-bold mb-1">Abako Gestão - Vendas (2026): <span class="skill-tag"><a href=""
+                                    target="_blank">EM DESENVOLVIMENTO</a></span></h6>
+
+                        <h6 class="fw-bold mb-1">Abako Gestão - CRM (2026): <span class="skill-tag"><a href=""
+                                    target="_blank">EM DESENVOLVIMENTO</a></span></h6>
+
+                        <h6 class="fw-bold mb-1">Abako Gestão - Logística (2026): <span class="skill-tag"><a href=""
+                                    target="_blank">EM DESENVOLVIMENTO</a></span></h6>
+
+                        <h6 class="fw-bold mb-1">Abako Gestão - ERP (2026): <span class="skill-tag"><a href=""
+                                    target="_blank">EM DESENVOLVIMENTO</a></span></h6>
+
+                        <h6 class="fw-bold mb-1">Abako Gestão - Gestão Contábil (2026): <span class="skill-tag"><a
+                                    href="" target="_blank">EM DESENVOLVIMENTO</a></span></h6>
+
+                        <h6 class="fw-bold mb-1">Abako Gestão - Análise Marketplace: <span class="skill-tag"><a href=""
+                                    target="_blank">EM DESENVOLVIMENTO</a></span></h6>
+                    </div>
+                </div>
+                <!-- Projetos -->
+
+
+                <br><br>
+                <!-- Conquistas -->
+                <h4 class="mb-4 fw-bold"><i class="fa fa-trophy text-primary me-2"></i>Conquistas</h4>
+                <div class="card p-4" id="formacao">
+
+                    <div class="mb-3">
+                        <li>
+                            <h6 class="fw mb-1">Inventor do primeiro guia comercial digital do Brasil.<span
+                                    class="skill-tag"> 1997 / 1998</span></h6>
+                        </li>
+
+                        <li>
+                            <h6 class="fw mb-1">Precursor da Internet Banda Larga no Brasil.<span class="skill-tag">
+                                    2001</span></h6>
+                        </li>
+
+
+                        <li>
+                            <h6 class="fw mb-1">Pioneiro na geração de matéria sobre agronegócio na TV no Brasil.<span
+                                    class="skill-tag"> 2004</span></h6>
+                        </li>
+                    </div>
+                </div>
+                <!-- Conquistas -->
+
+                <br><br>
+                <!-- Hobbies -->
+                <h4 class="mb-4 fw-bold"><i class="fa fa-bicycle text-primary me-2"></i>Hobbies</h4>
+                <div class="card p-4" id="formacao">
+                    <div class="mb-3">
+
+
+                        <li>
+                            <h6 class="fw mb-1">Pilotar e gerar fotos e imagens com drones.<span
+                                    class="skill-tag"></span>
+                        </li>
+                        </h6>
+
+                        <li>
+                            <h6 class="fw mb-1">Filmes e séries policiais, ação, aventura, médicos e ficção.<span
+                                    class="skill-tag"></span></h6>
+                        </li>
+
+
+                        <li>
+                            <h6 class="fw mb-1">Documentários History, History 2 e Discovery Science.<span
+                                    class="skill-tag"></span></h6>
+                        </li>
+
+                    </div>
+                </div>
+                <!-- Hobbies -->
+
+
+
+        </div>
+        </section>
+        </div>
+    </main>
+
+    <footer class="bg-white py-5 border-top">
+        <div class="container text-center">
+            <p class="text-muted mb-4">Interessado em escalar seus resultados com uso da Tecnologia e do Marketing?</p>
+            <a href="https://wa.me/5515996136898" target="_blank" class="btn btn-primary btn-lg px-5">
+                <i class="fab fa-whatsapp me-2"></i>Vamos conversar
+            </a>
+            <p class="mt-5 small text-secondary">© 2026 Renato de Carvalho | Sorocaba, SP</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
